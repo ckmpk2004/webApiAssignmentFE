@@ -1,0 +1,16 @@
+<h1>Doggie Games Store</h1>
+<div class="adminBar" *ngIf="data.loggedIn()">
+    <button class ="add" (click)="toAddGamePage()">Add new game</button>
+</div>
+<ul>
+<li *ngFor="let game of games"> 
+        <h3>{{game.name}} 
+            <button class ="modify" *ngIf="data.loggedIn()" 
+            (click)="modification(game.name, game.description, game.price)">modify</button>
+            <button class ="delete" *ngIf="data.loggedIn()"
+            (click)="deleteGame(game.name)">delete</button>
+        </h3> 
+        <p>{{game.description}} </p>
+        <h5>Game Price: {{game.price}} HKD</h5>
+    </li> 
+</ul>

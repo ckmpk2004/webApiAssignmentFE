@@ -1,0 +1,40 @@
+h1{
+    text-align: center;
+    color: White;
+}
+
+div{
+    height: 30px;
+}
+
+p{
+    text-align: center;
+    color: White;
+}
+
+button{
+    background-color: gray; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+.inventory-body{
+    min-width: 100%;
+    min-height: 100%;
+    position: fixed;
+    
+    background-image: url("../../images/backgroundImg/StarbackG.png");
+    background-color: black;
+    background-position: center;
+    background-size: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}

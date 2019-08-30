@@ -1,0 +1,27 @@
+div.head{
+    background-color:lightgreen;
+    padding:10px;
+}
+
+
+form{
+    text-align: left;
+    padding: 1em;
+    margin-bottom: 0;
+    background-color: white;
+}
+
+input{
+    width: 20em;
+}
+
+button{
+    color: white;
+    display: inline-block;
+    background-color: skyblue;
+    border-radius: 12px;
+    font-size:  20px;
+    text-align: center;
+    padding: 8px 50px;
+    cursor: pointer;
+}

@@ -1,0 +1,26 @@
+<div class="head">
+        <h1 class="pageName">Adding new Game</h1>
+    </div>
+    
+    <div class="login">
+        <div class= "card">
+        <form [formGroup]= "ModifyGameForm">
+            <label>
+                <h3>New Game name:</h3>
+                <h5>(Blank it if game title remain unchange)</h5>
+                <input [(ngModel)]="modifiedGameData.newName" name="newName"type ="text" formControlName = "newName">
+            </label>
+    
+            <label>
+                <h3>New Description:</h3>
+                <input [(ngModel)]="modifiedGameData.newDescription" name="newDescription"type ="text" formControlName = "newDescription">
+            </label>
+            <label>
+                <h3>New Price:</h3>
+                <input [(ngModel)]="modifiedGameData.newPrice" name="newPrice"type ="number" formControlName = "newPrice">
+            </label>
+        </form>
+        <button (click)="ModifyGame()" type="button" class="btn">Submit</button>
+        <button (click)="BackToPrePage()" type="button" class="btn2">Cancel</button>
+    </div>
+    </div>
