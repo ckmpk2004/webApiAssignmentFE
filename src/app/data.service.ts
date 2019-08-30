@@ -9,7 +9,7 @@ import { Router } from '@angular/router'
 })
 export class DataService {
   //URLs
-  private _herokuUrl = 'http://ckmwebapi.herokuapp.com'
+  private _herokuUrl = 'https://ckmwebapi.herokuapp.com'
   private _getGameUrl = this._herokuUrl+'/games';
   private _addGameUrl = this._herokuUrl+'/games/add';
   private _modifyGameUrl = this._herokuUrl+'/games/modify';
