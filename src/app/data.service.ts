@@ -8,6 +8,7 @@ import { Router } from '@angular/router'
   providedIn: 'root'
 })
 export class DataService {
+  //URLs
   private _herokuUrl = 'http://ckmwebapi.herokuapp.com'
   private _getGameUrl = this._herokuUrl+'/games';
   private _addGameUrl = this._herokuUrl+'/games/add';
@@ -15,8 +16,7 @@ export class DataService {
   private _delGameUrl = this._herokuUrl+'/games/delete';
   private _loginUrl =this._herokuUrl+'/login'
 
-  
-  
+  //Variables for data passing
   private _nameStore :string;
   private _descriptionStore :string;
   private _priceStore :number;
@@ -24,12 +24,11 @@ export class DataService {
 
   constructor(private http: HttpClient, private _router: Router) { }
 
-  
+  //Http Headers
   httpOptions1 = {headers: new HttpHeaders()};
   httpOptions2 = {headers: new HttpHeaders()};
 
  
-
   getGames(){
     this.httpOptions1.headers = this.httpOptions1.headers
     .set('Accept','application/json') 
